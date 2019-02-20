@@ -1,11 +1,13 @@
-const menuTab = [4];
-for (let i = 0; i < 4; i++) {
+const menuTab = [];
+menuTab.length = 4;
+for (let i = 0; i < menuTab.length; i++) {
     menuTab[i] = document.querySelector("li:nth-child(" + (i + 1) + ")");
 }
 const ball = document.querySelector("nav");
 const burger = document.querySelector(".hamburger");
-const divs = [3];
-for (let i = 0; i < 3; i++) {
+const divs = [];
+divs.length = 3;
+for (let i = 0; i < divs.length; i++) {
     divs[i] = document.querySelector(".hamburger div:nth-child(" + (i + 1) + ")");
 }
 burger.addEventListener('click', function () {
